@@ -1,6 +1,5 @@
-const piedraPapelTijera = (jugador=undefined)=>{
-
-    if (jugador === undefined) return console.warn(`Debe ingresar su jugada (piedra, papel o tijeras)`);
+const piedraPapelTijera = (jugador)=>{
+    if (!jugador) return console.warn(`Debe ingresar su jugada (piedra, papel o tijeras)`);
 
     if (typeof jugador !== 'string') return console.warn(`el tipo de entrada "${jugador}" no es válido. Solo se permite entrada de tipo texto.`);
 
