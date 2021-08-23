@@ -1,0 +1,43 @@
+/*fuego -> planta
+planta -> tierra
+tierra -> fuego */
+
+body{
+    margin: 0;
+}
+
+.melopia{
+    box-sizing: border-box;
+    position: fixed;
+    background-image: linear-gradient(180deg, #ffe951 0, #ffdd50 8.33%, #ffce51 16.67%, #ffbf52 25%, #ffae53 33.33%, #ff9c53 41.67%, #f28953 50%, #e17852 58.33%, #d06951 66.67%, #c25c51 75%, #b55252 83.33%, #aa4a53 91.67%, #a04455 100%);
+    width: 100vw;
+    box-shadow: 3px 6px 5px 0px #030305;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.titulazo{
+    font-family: impact, sans-serif;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+}
+
+.pokemon{
+    width: 200px;
+    height: 80px;
+}
+
+.cabeza1{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+
+.cabeza2{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+

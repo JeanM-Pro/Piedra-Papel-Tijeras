@@ -24,4 +24,4 @@ const piedraPapelTijera = (jugador=undefined)=>{
     
 }
 
-piedraPapelTijera();
+piedraPapelTijera('tijeras');
