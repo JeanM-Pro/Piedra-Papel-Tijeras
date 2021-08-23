@@ -41,3 +41,78 @@ body{
     width: 75%;
 }
 
+.cuerpo{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 85px;
+    flex-wrap: wrap;
+}
+
+.cuerpo-hijo1{
+    box-sizing: border-box;
+    height: 100%;
+    width: 25%;
+    background-color: rgb(228, 174, 123);
+    padding: 5px 8px 0 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-right: rgb(250, 143, 2) solid 4px;
+    box-shadow: 3px 6px 5px 0px #030305;
+}
+
+.ejemplo{
+    width: 230px;
+    height: 230px;
+    margin: 0;
+    padding: 0;
+}
+
+.cuadro1{
+    display: flex;
+}
+
+.cuadro2{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.cuadro3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.texto{
+    font-family: impact, sans-serif;
+    -webkit-text-fill-color: rgb(3, 15, 185);
+    -webkit-text-stroke: 1px rgb(248, 246, 246);
+    text-align: justify;
+    font-size: 19px;
+}
+
+.texto2{
+    font-family: impact, sans-serif;
+    -webkit-text-fill-color: rgb(3, 15, 185);
+    -webkit-text-stroke: 1px rgb(248, 246, 246);
+    text-align: center;
+    font-size: 19px;
+}
+
+.cuerpo-hijo2{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    box-sizing: border-box;
+    background: url("https://i.ibb.co/wcPdFFz/forest.jpg");
+}
+
+.fondo{
+    display: flex;
+    height: 100;
+    width: 100%;
+    filter: blur(0.2rem);
+}
