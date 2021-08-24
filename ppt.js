@@ -1,4 +1,4 @@
-const piedraPapelTijera = (jugador=undefined)=>{
+const piedraPapelTijera = (jugador)=>{
 
     if (jugador === undefined) return console.warn(`Debe ingresar su jugada (piedra, papel o tijeras)`);
 

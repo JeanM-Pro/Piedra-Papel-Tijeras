@@ -108,11 +108,70 @@ body{
     display: flex;
     box-sizing: border-box;
     background: url("https://i.ibb.co/wcPdFFz/forest.jpg");
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .fondo{
     display: flex;
     height: 100;
     width: 100%;
-    filter: blur(0.2rem);
+}
+
+.arriba{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.jugador{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    box-shadow: 3px 6px 5px 0px #030305;
+    border-radius: 0.5rem;
+}
+
+.versus{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.abajo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 121px;
+}
+
+.pokemones{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+
+.pokemones:hover{
+    width: 120px;
+    height: 120px;
+}
+
+.ajustes-pokemones{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.7rem;
+}
+
+.pokemones-abajo{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.7rem;
+}
+
+.pokemones-abajo:hover{
+    border: white solid 5px;
 }
