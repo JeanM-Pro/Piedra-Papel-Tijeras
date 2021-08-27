@@ -132,12 +132,47 @@ body{
     border-radius: 0.5rem;
 }
 
+.computadora{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    box-shadow: 3px 6px 5px 0px #030305;
+    border-radius: 0.5rem;
+}
+
 .versus{
     display: flex;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 220px;
+    height: 300px;
+    flex-direction: column;
+}
+
+.versus-arriba{
     display: flex;
+    width: 150px;
+    height: 150px;
+}
+
+.imagem{
+    height: 100%;
+    width: 100%;
+}
+
+.versus-abajo{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+}
+
+.resultado{
+    font-family:fantasy;
+    font-size: 30px;
+    -webkit-text-fill-color: rgb(3, 3, 3);
+    -webkit-text-stroke: 1px rgb(253, 5, 5);
+    text-align: center;
 }
 
 .abajo{
@@ -160,10 +195,11 @@ body{
     height: 120px;
 }
 
-.ajustes-pokemones{
+.ajustes-de-tarjetas{
     height: 100%;
     width: 100%;
     border-radius: 0.7rem;
+    /* display: none; */
 }
 
 .pokemones-abajo{
