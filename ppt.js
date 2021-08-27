@@ -71,29 +71,47 @@ nidokingBtn.addEventListener('click', ()=>{
 
 
 function juego(jugador){
-    let maquina = Math.round(Math.random()*2);
-    
-    if (maquina === 0) maquina = 'Charizard';
-    if (maquina === 1) maquina = 'Venusaur';
-    if (maquina === 2) maquina = 'Nidoking';
-
-    const resultadoFinal = calcularResultado(maquina, jugador);
 
     jugadorPokemones.src = ''+jugador+'.jpg';
 
-    maquinaPokemones.src = ''+maquina+'.jpg';
+    mostrarResultado.innerHTML = 'ELIGIENDO JUGADA';
 
-    switch(resultadoFinal){
-        case EMPATE:
-            mostrarResultado.innerHTML = 'TAN EMPATAOS';
+    const interval = setInterval(() => {
+        let maquina = Math.round(Math.random()*2);
+        if (maquina === 0) maquina = 'Charizard';
+        if (maquina === 1) maquina = 'Venusaur';
+        if (maquina === 2) maquina = 'Nidoking';
+        maquinaPokemones.src = ''+maquina+'.jpg';
+    }, 100);
+    
+    setTimeout(function(){
+
+        clearInterval(interval);
+        let maquina = Math.round(Math.random()*2);
+    
+        if (maquina === 0) maquina = 'Charizard';
+        if (maquina === 1) maquina = 'Venusaur';
+        if (maquina === 2) maquina = 'Nidoking';
+
+        const resultadoFinal = calcularResultado(maquina, jugador);
+
+        maquinaPokemones.src = ''+maquina+'.jpg';
+
+        switch(resultadoFinal){
+            case EMPATE:
+             mostrarResultado.innerHTML = 'TAN EMPATAOS';
+             break;
+            case GANASTE:
+             mostrarResultado.innerHTML = 'GANATE LOCOTRON';
             break;
-        case GANASTE:
-            mostrarResultado.innerHTML = 'GANATE LOCOTRON';
-            break;
-        case PERDISTE:
+            case PERDISTE:
             mostrarResultado.innerHTML = 'PELDITE WEY';
             break; 
-    };
+        };
+   
+    }, 3000);
+    
+    
 };
 
 function calcularResultado(maquina, jugador){
