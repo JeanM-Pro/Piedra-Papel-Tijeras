@@ -99,13 +99,13 @@ function juego(jugador){
 
         switch(resultadoFinal){
             case EMPATE:
-             mostrarResultado.innerHTML = 'TAN EMPATAOS';
+             mostrarResultado.innerHTML = 'ES UN EMPATE';
              break;
             case GANASTE:
-             mostrarResultado.innerHTML = 'GANATE LOCOTRON';
+             mostrarResultado.innerHTML = 'HAS GANADO :)';
             break;
             case PERDISTE:
-            mostrarResultado.innerHTML = 'PELDITE WEY';
+            mostrarResultado.innerHTML = 'HAS PERDIDO :(';
             break; 
         };
    
