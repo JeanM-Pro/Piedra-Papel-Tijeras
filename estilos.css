@@ -48,6 +48,7 @@ body{
     box-sizing: border-box;
     padding-top: 85px;
     flex-wrap: wrap;
+    background-size: cover;
 }
 
 .cuerpo-hijo1{
