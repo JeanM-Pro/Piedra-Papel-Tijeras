@@ -281,7 +281,7 @@ body{
     }
 }
 
-@media (max-height: 570px), (max-width: 320px){
+@media (max-height: 540px), (max-width: 320px){
     .melopia{
         flex-direction: column;
         height: 10vh;
