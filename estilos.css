@@ -11,6 +11,7 @@ body{
     position: fixed;
     background-image: linear-gradient(180deg, #ffe951 0, #ffdd50 8.33%, #ffce51 16.67%, #ffbf52 25%, #ffae53 33.33%, #ff9c53 41.67%, #f28953 50%, #e17852 58.33%, #d06951 66.67%, #c25c51 75%, #b55252 83.33%, #aa4a53 91.67%, #a04455 100%);
     width: 100vw;
+    height: 13vh;
     box-shadow: 3px 6px 5px 0px #030305;
     display: flex;
     flex-wrap: wrap;
@@ -22,23 +23,27 @@ body{
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 2px black;
     text-align: center;
+    font-size: 2.7vw;
 }
 
 .pokemon{
-    width: 200px;
-    height: 80px;
+    width: 15vw;
+    height: 12vh;
 }
 
 .cabeza1{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 25%;
+    height: 12vh;
 }
 
 .cabeza2{
     display: flex;
     justify-content: center;
     width: 75%;
+    align-items: center;
 }
 
 .cuerpo{
@@ -46,7 +51,7 @@ body{
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
-    padding-top: 85px;
+    padding-top: 13vh;
     flex-wrap: wrap;
     background-size: cover;
 }
@@ -62,29 +67,38 @@ body{
     flex-direction: column;
     border-right: rgb(250, 143, 2) solid 4px;
     box-shadow: 3px 6px 5px 0px #030305;
+    justify-content: space-evenly;
 }
 
 .ejemplo{
-    width: 230px;
-    height: 230px;
+    width: 65%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
 .cuadro1{
     display: flex;
+    width: 100%;
+    height: 25%;
+    align-items: center;
 }
 
 .cuadro2{
     margin-top: 15px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35%;
 }
 .cuadro3{
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
 }
 
 .texto{
@@ -92,7 +106,7 @@ body{
     -webkit-text-fill-color: rgb(3, 15, 185);
     -webkit-text-stroke: 1px rgb(248, 246, 246);
     text-align: justify;
-    font-size: 19px;
+    font-size: 30px;
 }
 
 .texto2{
@@ -100,7 +114,7 @@ body{
     -webkit-text-fill-color: rgb(3, 15, 185);
     -webkit-text-stroke: 1px rgb(248, 246, 246);
     text-align: center;
-    font-size: 19px;
+    font-size: 30px;
 }
 
 .cuerpo-hijo2{
@@ -109,13 +123,14 @@ body{
     display: flex;
     box-sizing: border-box;
     background: url("https://i.ibb.co/wcPdFFz/forest.jpg");
+    background-size: cover;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .fondo{
     display: flex;
-    height: 100;
+    height: 100%;
     width: 100%;
 }
 
@@ -200,7 +215,6 @@ body{
     height: 100%;
     width: 100%;
     border-radius: 0.7rem;
-    /* display: none; */
 }
 
 .pokemones-abajo{
@@ -211,4 +225,177 @@ body{
 
 .pokemones-abajo:hover{
     border: white solid 5px;
+}
+
+@media (max-height: 984px), (max-width: 2010px){
+    .texto{
+        font-size: 26px;
+    }
+    .texto2{
+        font-size: 26px;
+    }
+}
+
+@media (max-height: 876px), (max-width: 1822px){
+    .texto{
+        font-size: 24px;
+    }
+    .texto2{
+        font-size: 24px;
+    }
+}
+
+@media (max-height: 816px), (max-width: 1634px){
+    .texto{
+        font-size: 22px;
+    }
+    .texto2{
+        font-size: 22px;
+    }
+}
+
+@media (max-height: 768px), (max-width: 1510px){
+    .texto{
+        font-size: 20px;
+    }
+    .texto2{
+        font-size: 20px;
+    }
+}
+
+@media (max-height: 674px), (max-width: 1406px){
+    .texto{
+        font-size: 18px;
+    }
+    .texto2{
+        font-size: 18px;
+    }
+}
+
+@media (max-height: 638px), (max-width: 1238px){
+    .texto{
+        font-size: 16px;
+    }
+    .texto2{
+        font-size: 16px;
+    }
+}
+
+@media (max-height: 570px), (max-width: 320px){
+    .melopia{
+        flex-direction: column;
+        height: 10vh;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .cabeza1{
+        height: 50%;
+        justify-content: center;
+        display: flex;
+        align-content: center;
+    }
+    .cabeza2{
+        height: 25%;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        padding-top: 3px;
+    }
+    .pokemon{
+        height: 90%;
+        width: 100%;
+    }
+    .titulazo{
+        font-size: 10px;
+        font-family:monospace;
+        -webkit-text-fill-color:initial;
+        -webkit-text-stroke: initial;
+    }
+
+    .cuerpo{
+        flex-direction: column;
+        padding-top: 10vh;
+        height: 100vh;
+    }
+    .cuerpo-hijo1{
+        width: 100%;
+        height: 15%;
+        flex-direction:row;
+        justify-content:space-evenly;
+        align-content: center;
+        padding: 0;
+        
+    }
+    .texto{
+        font-size: 9px;
+        -webkit-text-fill-color:initial;
+        -webkit-text-stroke: initial;
+        padding-top: 12px;
+    }
+    .texto2{
+        font-size: 0;
+    }
+    .ejemplo{
+        width: 90%;
+        height: 90%;
+    }
+    .cuadro1{
+        width: 68%;
+        height: 100%;
+    }
+    .cuadro2{
+        width: 28%;
+        height: 100%;
+        margin: 0;
+        
+    }
+    .cuadro3{
+        width: 0;
+        height: 0;
+    }
+
+    .cuerpo-hijo2{
+        height: 70%;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .jugador{
+        width: 100px;
+        height: 140px;
+        border-radius: 0.5rem;
+    }
+
+    .versus{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 120px;
+        height: 200px;
+        flex-direction: column;
+    }
+
+    .versus-arriba{
+        width: 50px;
+        height: 50px;
+    }
+
+    .resultado{
+        font-family:fantasy;
+        font-size: 15px;
+        -webkit-text-fill-color: rgb(250, 246, 246);
+        -webkit-text-stroke: 1px rgb(3, 2, 2);
+        text-align: center;
+    }
+
+    .computadora{
+        width: 100px;
+        height: 140px;
+    }
+
+    .pokemones{
+        width: 80px;
+        height: 80px;
+    }
+   
 }
